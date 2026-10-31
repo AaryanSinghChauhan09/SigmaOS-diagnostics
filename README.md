@@ -1,8 +1,12 @@
-# SigmaOS-diagnostics
+# SigmaOS Diagnostics
 
-This repository is a SigmaOS component checkout. Its implementation scope and integration status are tracked in the central SigmaOS component registry.
+This crate exports `DiagnosticsManager` and organizes source under a
+`diagnostics` module, including crash and kernel-report modules. The repository
+contains many versioned diagnostic modules; their presence does not establish
+that a running kernel or host is being monitored. Check each data source and
+collection path before relying on a diagnostic report.
 
-## Development
+## License
 
-Review the repository history and existing source-level checks before changing behavior. Keep changes focused, document user-visible workflows, and update the central registry only when implementation evidence supports a status change.
+See [`LICENSE`](LICENSE) and [`Cargo.toml`](Cargo.toml).
 
